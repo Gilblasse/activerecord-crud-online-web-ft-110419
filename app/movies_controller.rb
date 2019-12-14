@@ -94,5 +94,5 @@ def can_destroy_all_items_at_once
   10.times do |i|
     Movie.create(title: "Movie_#{i}").tap{|m| m.destroy}
   end
-  Movies.all.
+  Movies.destroy_all
 end
